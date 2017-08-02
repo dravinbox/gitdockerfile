@@ -1,4 +1,4 @@
-FROM eboraas/apache:latest
+FROM httpd:latest
 
 MAINTAINER zry "kawai566@yeah.net"
 
@@ -8,7 +8,5 @@ RUN apt-get update
 RUN apt-get install -y vim
 RUN apt-get install -y gcc g++
 
-RUN touch test.txt && echo "abc" >>abc.txt
 
 
-ENTRYPOINT ["/bin/bash"]
