@@ -10,5 +10,5 @@ RUN apt-get install -y gcc g++
 
 RUN touch test.txt && echo "abc" >>abc.txt
 
-ENTRYPOINT ["ls"]
-CMD ["-a","-l"]
+
+ENTRYPOINT ["/bin/bash"]
