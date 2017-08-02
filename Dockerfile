@@ -10,7 +10,5 @@ RUN apt-get install -y gcc g++
 
 RUN touch test.txt && echo "abc" >>abc.txt
 
-EXPOSE 80 38080 
-
 ENTRYPOINT ["ls"]
 CMD ["-a","-l"]
