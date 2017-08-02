@@ -1,4 +1,4 @@
-FROM httpd:latest
+FROM eboraas/apache:latest
 
 MAINTAINER zry "kawai566@yeah.net"
 
